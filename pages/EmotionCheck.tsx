@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { AssessmentResult, Level, ScoreCategory } from '../types';
 
@@ -29,14 +28,21 @@ const YEAR_OPTIONS = [
 ];
 
 const DEPARTMENT_OPTIONS = [
-  "เทคนิคคอมพิวเตอร์", 
-  "การโรงแรม", 
-  "การบัญชี", 
-  "ช่างไฟฟ้า", 
-  "ช่างกลโรงงาน", 
-  "ช่างเชื่อมโลหะ", 
-  "โภชนาการ", 
-  "คอมพิวเตอร์ธุรกิจ"
+  "แผนกช่างยนต์",
+  "แผนกช่างกลโรงงาน",
+  "แผนกช่างเชื่อมโลหะ",
+  "แผนกช่างไฟฟ้า",
+  "แผนกช่างอิเล็กทรอนิกส์",
+  "แผนกเมคคาทรอนิกส์",
+  "แผนกเทคนิคคอมพิวเตอร์",
+  "แผนกการบัญชี",
+  "แผนกการตลาด",
+  "แผนกธุรกิจค้าปลีก",
+  "แผนกโลจิสติกส์",
+  "แผนกธุรกิจดิจิทัล",
+  "แผนกการโรงแรม",
+  "แผนกการท่องเที่ยว",
+  "แผนกอาหารและโภชนาการ"
 ];
 
 const DMH_CHECKIN_URL = 'https://checkin.dmh.go.th';
@@ -115,7 +121,6 @@ const EmotionCheck: React.FC<EmotionCheckProps> = ({ onComplete, onBack, databas
       setStep(3);
     } catch (error) {
       console.error('Submission failed:', error);
-      // Even if sheet fail, we show result locally
       setFinalResult(result);
       onComplete(result);
       setStep(3);

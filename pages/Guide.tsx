@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Guide: React.FC = () => {
@@ -14,7 +13,7 @@ const Guide: React.FC = () => {
           <h2 className="text-2xl font-bold mb-4">1. การ Deploy (สำคัญที่สุด)</h2>
           <p className="mb-4">ทุกครั้งที่มีการแก้ไขโค้ดใน Apps Script คุณต้องทำตามนี้:</p>
           <ul className="list-decimal ml-6 space-y-2 font-bold text-blue-700">
-            <li>กดปุ่ม Deploy > <b>New Deployment</b> (ห้ามใช้ Test Deployment)</li>
+            <li>กดปุ่ม Deploy {' > '} <b>New Deployment</b> (ห้ามใช้ Test Deployment)</li>
             <li>Execute as: <b>Me</b></li>
             <li>Who has access: <b>Anyone</b> (ห้ามเลือก Only myself หรือ วิทยาลัย)</li>
             <li>กด Deploy และคัดลอก URL ใหม่ที่ลงท้ายด้วย <b>/exec</b></li>
@@ -29,7 +28,7 @@ const Guide: React.FC = () => {
         <section className="bg-white p-8 rounded-[2rem] shadow-sm border border-amber-200 bg-amber-50">
           <h2 className="text-2xl font-bold mb-4">3. การอนุญาตสิทธิ์ (Authorization)</h2>
           <p>ตอนกด Deploy ครั้งแรก จะมีหน้าต่างเตือนว่า Google Haven't verified this app ให้กด:</p>
-          <p className="font-bold">Advanced > Go to Gume Kokoro (unsafe) > Allow</p>
+          <p className="font-bold">Advanced {' > '} Go to Gume Kokoro (unsafe) {' > '} Allow</p>
         </section>
       </div>
     </div>
